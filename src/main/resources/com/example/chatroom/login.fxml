@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="382.0" prefWidth="608.0" scaleShape="false" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="382.0" maxWidth="608.0" minHeight="382.0" minWidth="608.0" prefHeight="382.0" prefWidth="608.0" scaleShape="false" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatroom.loginMethods">
    <children>
       <ImageView fitHeight="433.0" fitWidth="588.0" layoutX="-24.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -17,31 +18,36 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff5e0" height="407.0" layoutX="228.0" layoutY="-19.0" stroke="TRANSPARENT" strokeType="INSIDE" width="385.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15253d" height="111.0" layoutX="227.0" layoutY="-3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="389.0" />
-      <Label alignment="CENTER" layoutX="260.0" layoutY="19.0" prefHeight="76.0" prefWidth="317.0" text="MeChat" textAlignment="CENTER" textFill="#eeb76c">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a84448" height="111.0" layoutX="227.0" layoutY="-3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="389.0" />
+      <Label alignment="CENTER" layoutX="260.0" layoutY="18.0" prefHeight="76.0" prefWidth="317.0" text="MeChat" textAlignment="CENTER" textFill="#fff5e0">
          <font>
-            <Font name="Apple SD Gothic Neo Regular" size="51.0" />
+            <Font name="Cambay Devanagari Regular" size="66.0" />
          </font>
       </Label>
-      <TextField layoutX="276.0" layoutY="151.0" prefHeight="37.0" prefWidth="297.0" promptText="Username">
+      <TextField fx:id="usernameTextField" layoutX="276.0" layoutY="151.0" prefHeight="37.0" prefWidth="297.0" promptText="Username">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <Button layoutX="283.0" layoutY="275.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="114.0" text="Login">
+      <Button fx:id="loginButton" layoutX="283.0" layoutY="275.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="114.0" style="-fx-background-radius: 10; -fx-background-color: #7A3E65;" text="Login" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <TextField layoutX="276.0" layoutY="210.0" prefHeight="37.0" prefWidth="297.0" promptText="Password">
+      <PasswordField fx:id="passwordTextField" layoutX="276.0" layoutY="210.0" prefHeight="37.0" prefWidth="297.0" promptText="Password">
          <font>
             <Font size="16.0" />
          </font>
-      </TextField>
-      <Button layoutX="455.0" layoutY="275.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" text="Register">
+      </PasswordField>
+      <Button fx:id="registerButton" layoutX="455.0" layoutY="275.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" style="-fx-background-radius: 10; -fx-background-color: #7A3E65;" text="Register" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
+      <Label fx:id="displayInfo" alignment="CENTER" layoutX="303.0" layoutY="330.0" prefHeight="32.0" prefWidth="244.0" textAlignment="CENTER" textFill="#c93636">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
